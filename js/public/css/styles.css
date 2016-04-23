@@ -1,0 +1,449 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right; 
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left; 
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: auto;`
+}
+
+
+
+@font-face {
+  font-family: "codebold";
+  src: url(../fonts/codebold.otf);
+}
+@font-face {
+  font-family: font1;
+  src: url(../fonts/TrashHand.TTf);
+}
+
+body {
+  font-family: Lato;
+  color: #fff!important;
+  z-index:999999;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover!important;
+  background-image: url("../images/free.jpg");
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.body2 {
+  background-image: url('../images/h3.jpeg');
+  width: 100%!important;
+  height: 100%!important;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 1000px;
+}
+
+.extraBody {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    height: 80px;
+    /*background-image: url("../images/wood.jpg");*/
+    /*background-color: rgba(0,0,0,0.2);*/
+    /*border-bottom: solid 1px red;*/
+    background-color: black;
+    
+  }
+
+img {
+  margin: auto;
+  width: 50px;
+  display: block;
+  padding-top: 5px;
+  z-index:999999;
+  float: center;
+  top: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: .5% 50%;
+/*  background-image: url("../images/champ.png");*/
+}
+
+.heada {
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  font-family: font1;
+  font-size: 540%;
+  text-align: center;
+  font-weight: 100;
+  color: white;
+}
+
+h2 {
+  font-family: adam;
+  font-size 125%;
+  font-weight: bold;
+  color: white;
+}
+
+.landing {
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  width: 300px!important;
+  margin: 15px auto!important;
+  text-align: center!important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: none!important;
+  box-shadow: none!important;
+  outline: 0 none!important;
+}
+
+
+/* search bar */
+
+.container-4{
+  overflow: hidden;
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 20px auto!important;
+  text-align: center!important;
+}
+
+.container-4 input.search{
+  width: 300px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-size: 10pt;
+  float: left;
+  font-family: Roboto;
+  color: #000;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-size: 10%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.container-4 input.search::-webkit-input-placeholder {
+ color: #65737e;
+}
+
+.container-4 input.search:-moz-placeholder { /* Firefox 18- */
+ color: #65737e;
+}
+
+.container-4 input.search::-moz-placeholder {  /* Firefox 19+ */
+ color: #65737e;
+}
+
+.container-4 input.search:-ms-input-placeholder {
+ color: #65737e;
+}
+
+.container-4 button.icon{
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  border: none;
+  background: #232833;
+  height: 50px;
+  width: 50px;
+  color: #4f5b66;
+  opacity: 0;
+  font-size: 10pt;
+
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+  outline: none;
+  opacity: 1;
+  margin-left: -50px;
+  background-image: url('../images/martiniredwhite.ico');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 50%;
+  }
+
+.container-4:hover button.icon:hover{
+  background: white;
+  border: 1px solid #ccc;
+  background-image: url('../images/martini.ico');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+  /**/
+
+input #go {
+  border-top-right-radius: 20%!important;
+  border-bottom-right-radius: 20%!important
+  border: none!important;
+}
+
+input search {
+  border-top-left-radius: 20%!important;
+  border-bottom-left-radius: 20%!important;
+}
+
+
+/******************************************
+/* CONTENT                   
+/*******************************************/
+
+em {
+  color: red; 
+}
+
+.content {
+
+  width: 100%!important;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /*margin: auto;*/
+
+}
+
+
+.results {
+  
+  width: 95%;
+  margin: auto!important;
+  padding: 10px;
+  display: none;
+}
+
+.results h2 {
+  color: #fff!important;
+  font-size: 125%;
+  font-weight: 200;
+  padding: 10px;
+}
+/******************************************
+/* BARS                   
+/*******************************************/
+
+#bars {
+  float: right;
+  width: 50%;
+  /**/
+  margin: auto;
+}
+.bars {
+  width: 80%;
+  float: right;
+  margin: 15px;
+  text-align: center;
+  font-size: 145%;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 300;
+  color: #fff!important;
+  /*background-color: rgba(0,0,0,0.2);*/
+  background-image: url("../images/wood.jpg");
+  display: none;
+}
+
+.bars ul {
+  text-align: center;
+  margin-right: 50px!important;
+}
+
+.bars ul li {
+  list-style-type: none!important;
+  margin: auto;
+  text-align: center;
+  width: 250px;
+  padding: 5px;
+
+}
+
+.bars h2 {
+  padding: none!important;
+  margin-top: 0!important;
+  margin: 0!important;
+  margin-bottom: none!important;
+  font-size: 200%;
+  cursor: pointer;
+  font-family: codebold;
+  font-size: 250%;
+}
+
+/******************************************************************************************************
+                                  TWITTER DIV
+ ***************************************************************************************************** */                              
+
+#twitter{
+  min-height: 1000px;
+  margin-left: 1%;
+  width: 30%;
+  float: right;
+  text-align: center;
+  
+}
+
+.twitter {
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+
+}
+
+.twitter-results h3 {
+  font-family: font1;
+  color: black;
+}
+
+blockquote.twitter-tweet {
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  max-width: 468px;
+}
+ 
+blockquote.twitter-tweet p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+ 
+blockquote.twitter-tweet a {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  outline: 0 none;
+}
+ 
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
+}
+
+/*******************************************************
+                  Google MAPs API
+*******************************************************/
+
+.map-click {
+  background:transparent;
+  border:none;
+}
+
+.map-click:hover {
+  color: red;
+}
+
+#legal{
+  height: 100px;
+  width: auto;
+}
+
+#map0, #map1, #map2, #map3, #map4 {
+  display: none;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+}

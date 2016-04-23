@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="../../images/martini.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../dist/zmd.hierarchical-display.min.css">
+    <link href="css/animate.css-master/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- Scripts-->
+    <script src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+    <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaMGPMM2MLt3v7twIapog8PLckj8t2U8I"></script>
+    <script src="../yelp.js"></script>
+    <script src="../googleMaps.js"></script>
+    <script type="text/javascript" src="../ajax.js"></script>
+    
+    <title>Happy Hour</title>
+  </head>
+  <body>
+    <div class="extraBody">
+      <div class="sticky">
+        <a href="index.html"><img id="tini" src="images/Iconsmind-Outline-Martini-Glass-invert-red-contents.ico"></a>
+      </div>
+      <div class="container">
+        <div class="greeting">
+          <div class="row landing">
+              <div class="heada">
+                <h1>The future of happy hour is here</h1>
+                <h2>Make your next move</h2>
+              </div>
+            <div class="box">
+              <div class="container-4">
+                <form>
+                  <input type="search" class="search" id="yelp-city" placeholder="Search..." />
+                  <button class="icon" id="click"><i></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--END OF CONTAINER -->
+
+      <div class="row content clearfix">
+        <div class="results">
+
+          <div id="bars" class="clearfix" data-animation="hierarchical-display" data-animation-in="bounceIn" data-speed="3">
+            <div class="bars">
+              <h2 id="bar0"></h2>
+              <p class="snippet0"></p>
+              	<ul>
+  	                <li id="address0"></li>
+  	                <li id="phone0"></li>
+                    <button class="map-click">See location</button>
+                	</ul>
+              <div class="map" id="map0"></div>
+          	</div>
+
+         
+            <div class="bars">
+              <h2 id="bar1"></h2>
+              <p class="snippet1"></p>
+                <ul>
+                  <li id="address1"></li>
+                  <li id="phone1"></li>
+                  <button class="map-click">See location</button>
+                </ul>
+              <div class="map" id="map1"></div>
+            </div>
+
+
+            <div class="bars">
+              <h2 id="bar2"></h2>
+                <p class="snippet2"></p>
+                  <ul>
+                    <li id="address2"></li>
+                    <li id="phone2"></li>
+                    <button class="map-click">See location</button>
+                  </ul>
+              <div class="map" id="map2"></div>
+            </div>
+
+
+            <div class="bars">
+              <h2 id="bar3"></h2>
+              <p class="snippet3"></p>
+                <ul>
+                  <li id="address3"></li>
+                  <li id="phone3"></li>
+                  <button class="map-click">See location</button>
+                </ul>
+              <div class="map" id="map3"></div>
+            </div>
+
+
+            <div class="bars">
+              <h2 id="bar4"></h2>
+              <p class="snippet4"></p>
+                <ul>
+                  <li id="address4"></li>
+                  <li id="phone4"></li>
+                  <button class="map-click">See location</button>
+                </ul>
+              <div class="map" id="map4"></div>
+            </div><!--END OF BAR DIV -->
+
+          </div><!-- END OF BAR ID -->
+
+        </div><!--END OF RESULTS DIV-->
+      </div><!-- END OF ROW CONTENT -->
+    </div><!--End of extra body div -->
+  </body>
+  
+
+</html>
